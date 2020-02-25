@@ -642,7 +642,7 @@
 
 
     <div class="content">
-      <ul class="popular-posts"><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="/2020/02/25/Test-Page/" title="Test Page" rel="bookmark">Test Page</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="/2020/02/25/test-2/" title="test 2" rel="bookmark">test 2</a></h3></div></li></ul>
+      <ul class="popular-posts"><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="/2020/02/25/test-2/" title="test 2" rel="bookmark">test 2</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="/2020/02/25/test/" title="test" rel="bookmark">test</a></h3></div></li></ul>
     </div>
   </section>
 
@@ -753,20 +753,6 @@
   
 <script src="//cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 
-<script>
-  (function(){
-      var bp = document.createElement('script');
-      var curProtocol = window.location.protocol.split(':')[0];
-      if (curProtocol === 'https') {
-          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-      }
-      else {
-          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-      }
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(bp, s);
-  })();
-  </script>
 
   <script>
     
@@ -777,6 +763,24 @@
 
 
   <script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+
+
+{% if theme.baidu_push %}
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+{% endif %}
 
 
   <script async src="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js"></script>
