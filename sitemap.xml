@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.zzzxf.cn/2020/02/26/hello-world/</loc>
+    
+    <lastmod>2020-02-25T18:03:54.026Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.zzzxf.cn/categories/index.html</loc>
     
     <lastmod>2020-02-25T11:25:07.110Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>http://blog.zzzxf.cn/tags/index.html</loc>
     
     <lastmod>2020-02-25T11:24:15.259Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.zzzxf.cn/2020/02/25/hello-world/</loc>
-    
-    <lastmod>2020-02-24T16:54:49.127Z</lastmod>
     
   </url>
   
